@@ -37,7 +37,7 @@ RUN conda init bash
 RUN python3 -m pip install --upgrade pip
 RUN python3 -m pip install --upgrade setuptools==68.2.2
 # RUN pip3 install torch==1.9.0+cu111 torchvision==0.10.0+cu111 -f https://download.pytorch.org/whl/torch_stable.html # Used to be this, and not the one below:
-RUN pip3 install torch==2.1.2+cu121 torchvision==0.17.2+cu121 -f https://download.pytorch.org/whl/torch_stable.html
+RUN pip3 install torch==2.2.2+cu121 torchvision==0.17.2+cu121 -f https://download.pytorch.org/whl/torch_stable.html
 
 RUN conda update -n base conda
 RUN conda install -n base conda-libmamba-solver
